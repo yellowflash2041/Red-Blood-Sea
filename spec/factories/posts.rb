@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :post do
-    title 'a' * 20
-    content 'a' * 20
+    title { 'aaaaaaaaaaaaaaaaaaaa' }
+    content { 'aaaaaaaaaaaaaaaaaaaa' }
     user
     category
   end
