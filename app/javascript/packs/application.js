@@ -19,3 +19,5 @@ require("channels")
 require("jquery")
 require("bootstrap")
 //= require bootstrap-sprockets
+
+require("packs/posts/style")
