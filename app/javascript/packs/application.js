@@ -22,3 +22,4 @@ require("bootstrap")
 
 require("packs/posts/style")
 require("packs/posts/modal")
+require("packs/posts/infinite_scroll")
