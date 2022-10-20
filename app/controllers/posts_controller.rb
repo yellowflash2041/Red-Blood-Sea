@@ -19,9 +19,6 @@ class PostsController < ApplicationController
 
   def new
     @branch = params[:branch]
-    print 'asdf'
-    print @branch
-    print 'asdf'
     @categories = Category.where(branch: @branch)
     @post = Post.new
   end
