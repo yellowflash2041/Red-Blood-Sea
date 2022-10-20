@@ -1,6 +1,6 @@
-$(document).on('turbolinks:load', () => {
+$(document).on('turbolinks:load', function () {
   let isLoading = false;
-  if ($('.infinite-scroll', this).size() > 0) {
+  if ($('.infinite-scroll', this).length > 0) {
     $(window).on('scroll', () => {
       const more_posts_url = $('.pagination a.next_page').attr('href');
       const threshold_passed = $(window).scrollTop() > $(document).height() - $(window).height() - 60;
