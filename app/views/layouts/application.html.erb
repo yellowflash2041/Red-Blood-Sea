@@ -3,6 +3,7 @@
   <head>
     <title>Redbloodsea</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= Gon::Base.render_data %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -13,10 +14,14 @@
   </head>
 
   <body>
+    <%= include_gon %>
+
     <%= render 'layouts/navigation' %>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>
+
+    <%= render 'layouts/application/private_conversations_windows' %>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
